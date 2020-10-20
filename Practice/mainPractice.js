@@ -76,27 +76,27 @@
 
 
 
-function bhund(r,s){
-    return (r+s)
-}
-console.log(bhund(6,8))
+// function bhund(r,s){
+//     return (r+s)
+// }
+// console.log(bhund(6,8))
 
-function add (W1, W2){
-var W3 = W1 + W2
-console.log('the output is ' + W3)
-}
+// function add (W1, W2){
+// var W3 = W1 + W2
+// console.log('the output is ' + W3)
+// }
 
-var W4 = add(2, 2)
-W4;
+// var W4 = add(2, 2)
+// W4;
 
-function sub (a,b) {
-    return (a-b)
-}
-function divide(c,d){
-    return sub(c,d)/d
-}
-var total = divide (8,4)
-console.log(total)
+// function sub (a,b) {
+//     return (a-b)
+// }
+// function divide(c,d){
+//     return sub(c,d)/d
+// }
+// var total = divide (8,4)
+// console.log(total)
 
 // var a = x => x + 2
 // console.log(a(4));
@@ -104,38 +104,105 @@ console.log(total)
 // var c = (x, y) => x + y
 // console.log(c(2, 2))
 
-let w = a => a + 6
-console.log(w(12))
+// let w = a => a + 6
+// console.log(w(12))
 
-var r = (a,b) => a+b
-console.log(r(4,4))
-
-
-let a = t  => t + 7
-console.log(a(7))
+// var r = (a,b) => a+b
+// console.log(r(4,4))
 
 
-var l = (w,b) => w+b
-console.log(l(9,9))
+// let a = t  => t + 7
+// console.log(a(7))
 
-let func = (renderdata) => {
+
+// var l = (w,b) => w+b
+// console.log(l(9,9))
+
+
+
+function promise(){
+return new Promise(function(resolve,reject){
     setTimeout(() => {
-     renderdata('pussyeater')   
-    }, 20000);
+        let error=false;
+        if(!error){
+            console.log('server started')
+            resolve()
+        }else{
+            console.log('request rejected')
+            reject();
+
+            }
+        })
+        
+    }, 2000);
+
 };
-
-function renderdata(x){
-console.log(x)
+promise().then(() => {
+    console.log('port 3000');
+}).catch(() =>{
+    console.log('port 4000')
+});
+////////////////////////////////////////////////////////// 
+function promise(){
+return new Promise(function(resolve,reject){
+    setTimeout(() => {
+    let error=false;
+    if(!error){
+        console.log('server started')
+        resolve()
+    } else{
+        console.log('request rejected')
+        reject();
+    
+        }
+    });
+   }, 2000);
 };
-func(renderdata);
+promise().then(() => {
+    console.log('port 3000');
+}).catch(() => {
+    console.log('port 4000')
+});
 
 
 
-let fuck =  (a , b) => {
-    return(a + b)
-}
 
-console.log(fuck(4,5));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
