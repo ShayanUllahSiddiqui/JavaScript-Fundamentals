@@ -1,7 +1,6 @@
 // https://dev.to/dip15739/responsive-website-with-only-1-css-property-3ea9?fbclid=IwAR075JUHpYjOVbsJNUbpz1ouNdhXK2HF1mRyUFSwO5QabdejrF7nuQt7FN8
 // clamp CSS
 
-
 // // var a = '10';
 // // var b = 15;
 
@@ -120,100 +119,80 @@
 
 
 
-function promise(){
-return new Promise(function(resolve,reject){
-    setTimeout(() => {
-        let error=false;
-        if(!error){
-            console.log('server started')
-            resolve()
-        }else{
-            console.log('request rejected')
-            reject();
+// function promise(){
+// return new Promise(function(resolve,reject){
+//     setTimeout(() => {
+//         let error=false;
+//         if(!error){
+//             console.log('server started')
+//             resolve()
+//         }else{
+//             console.log('request rejected')
+//             reject();
 
-            }
-        })
+//             }
+//         })
         
-    }, 2000);
+//     }, 2000);
 
-};
-promise().then(() => {
-    console.log('port 3000');
-}).catch(() =>{
-    console.log('port 4000')
-});
-////////////////////////////////////////////////////////// 
-function promise(){
-return new Promise(function(resolve,reject){
-    setTimeout(() => {
-    let error=false;
-    if(!error){
-        console.log('server started')
-        resolve()
-    } else{
-        console.log('request rejected')
-        reject();
+// };
+// promise().then(() => {
+//     console.log('port 3000');
+// }).catch(() =>{
+//     console.log('port 4000')
+// });
+// ////////////////////////////////////////////////////////// 
+// function promise(){
+// return new Promise(function(resolve,reject){
+//     setTimeout(() => {
+//     let error=false;
+//     if(!error){
+//         console.log('server started')
+//         resolve()
+//     } else{
+//         console.log('request rejected')
+//         reject();
     
-        }
-    });
-   }, 2000);
+//         }
+//     });
+//    }, 2000);
+// };
+// promise().then(() => {
+//     console.log('port 3000');
+// }).catch(() => {
+//     console.log('port 4000')
+// })
+
+// async function getData() {
+//     let promise01 = new Promise(function(resolve,reject){
+//         fetch('https://jsonplaceholder.typicode.com/todos/1')
+//         .then(function(response){
+//                return response.json()
+//     })
+//     .then(function(result){
+//          resolve(result)
+//     })
+//     .catch(function(error){
+//          reject(error)
+//     })
+// })
+//     let data =await promise01
+//     console.log(data)  
+// };
+
+
+// getData();
+
+
+class Obj {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    name() {
+        console.log(this.name, this.age)
+    }
 };
-promise().then(() => {
-    console.log('port 3000');
-}).catch(() => {
-    console.log('port 4000')
-});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+let obj = new Obj('Bilal', 12);
+console.log(obj);
